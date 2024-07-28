@@ -65,6 +65,8 @@ if __name__ == '__main__':
     -x 一个用例报错，后续用例执行停止 
     --maxfail 设置几个用例失败后停止  ,'--maxfail=2'
     -k 运行包含指定字符的用例         ,'-k=xx'
+    --lf, --last-failed 只重新运行上次运行失败的用例（或如果没有失败的话会全部跑）
+    --ff, --failed-first 运行所有测试，但首先运行上次运行失败的测试（这可能会重新测试，从而导致重复的fixture setup/teardown）
     
     Terminal 运行规则
     1. pytest 文件名/
@@ -76,8 +78,9 @@ if __name__ == '__main__':
     
     常用插件：
     pytest_html: 生成xml/html格式测试报告:pytest --html=用户路径/report.html 
-    pytest-xdist：pytest-xdist多线程运行:    pytest class01.py -n 2   （安装pytest-xdist）
+    pytest-xdist：pytest-xdist多线程运行:    pytest test_skip.py -n 2   （安装pytest-xdist）
     pytest-ordering: 改变用例执行顺序
-    pytest-rerunfailures 失败重跑的
+    pytest-rerunfailures: 失败重跑的
+    pytest-repeat: 重复执行单个测试用例，并指定重复次数
     allure-pytest
 """
