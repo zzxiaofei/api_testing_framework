@@ -1,0 +1,14 @@
+config:
+    name:用例的描述
+test_get:
+    name: 接口的描述
+    request:
+      method: GET
+      url:
+      params:
+        name:
+        address:
+    validate:
+      - eq: [ "status_code", "200" ]
+      - eq: [$.args.address, 上海市]
+      - eq: [body,args.name, 张三]
