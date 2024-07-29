@@ -219,7 +219,7 @@ fixture为module时，在当前.py脚本里面所有用例开始前只执行一�
 fixture为session级别是可以跨.py模块调用的，也就是当我们有多个.py文件的用例的时候，
 如果多个用例只需调用一次fixture，那就可以设置为scope="session"，并且写到conftest.py文件里。
 conftest.py文件名称时固定的，pytest会自动识别该文件。放到项目的根目录下就可以全局调用了，如果放到某个package下，那就在改package内有效。
-如果需要同时执行两个py文件，可以在cmd中在文件py文件所在目录下执行命令：pytest -s test_fixture.py test_fixture1.py 
+如果需要同时执行两个py文件，可以在cmd中在文件py文件所在目录下执行命令：pytest -s test_fixture.py test_fixture1.py
 """
 
 """
@@ -356,6 +356,3 @@ class TestCase:
     def test_login(self):
         print('hhh，成功登录百度')
 
-
-if __name__ == '__main__':
-    pytest.main()

@@ -35,4 +35,4 @@ def test_zero_division():
 
 
 if __name__ == '__main__':
-    pytest.main(['-s', 'test_sample.py'])
+    pytest.main(['-s', 'test_sample.py', '--allure-dir=./test'])
