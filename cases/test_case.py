@@ -49,7 +49,7 @@ class TestCase:
 
     # 不等于
     def test_g(self):
-        assert 1 == 1
+        assert 1 != 2
 
 
 if __name__ == '__main__':
@@ -67,6 +67,13 @@ if __name__ == '__main__':
     -k 运行包含指定字符的用例         ,'-k=xx'
     --lf, --last-failed 只重新运行上次运行失败的用例（或如果没有失败的话会全部跑）
     --ff, --failed-first 运行所有测试，但首先运行上次运行失败的测试（这可能会重新测试，从而导致重复的fixture setup/teardown）
+    --xfail(x)
+    --collect-only: 展示给定的配置下的测试用例运行
+    --q:简化信息，与-v相反p
+    --l 失败的测试用例局部变量以及及值就会显示出来
+    --tb= short、line(告诉错误的位置)、no
+    --duration=0 耗时长短显示
+    
     
     Terminal 运行规则
     1. pytest 文件名/

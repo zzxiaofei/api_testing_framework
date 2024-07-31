@@ -1,0 +1,27 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    先登录，再进行其他操作
+    :param login:
+    :return:
+    ","0","test_01","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_allure","",""
+"","0","test_success","cases","Mon Jul 29 19:52:14 CST 2024","skipped","Mon Jul 29 19:52:14 CST 2024","TestSkip","test_skip","",""
+"","0","test_foo[3-1]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_d","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","0","test_zero_division","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_sample","",""
+"","0","test_parametrize[2+4-6]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_b","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","0","test_login","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_fixture","",""
+"","1","test_c","cases","Mon Jul 29 19:52:14 CST 2024","failed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","0","test_g","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","0","test_f","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","1","test_parametrize[3+5-8]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_foo[2-0]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_foo[3-0]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_foo[2-1]","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_parametrize","",""
+"","0","test_function","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_skip","",""
+"","0","test_a","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"","0","test_e","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","TestCase","test_case","",""
+"
+    不需要登录，直接操作
+    :return:
+    ","1","test_02","cases","Mon Jul 29 19:52:14 CST 2024","passed","Mon Jul 29 19:52:14 CST 2024","","test_allure","",""

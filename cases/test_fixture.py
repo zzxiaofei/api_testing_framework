@@ -10,6 +10,7 @@ fixture命名不要以test开头，跟用例区分开。fixture是有返回值�
 fixture当作参数传入
 """
 
+
 # @pytest.fixture()
 # def test1():
 #     a = 'hello pytest'
@@ -25,20 +26,20 @@ fixture当作参数传入
 
 """
 
-# @pytest.fixture()
-# def test3():
-#     a = 'hello pytest'
-#     b = '123456'
-#     print('传出a,b')
-#     return a, b
-#
-#
-# def test4(test3):
-#     u = test3[0]
-#     p = test3[1]
-#     assert u == 'hello pytest'
-#     assert p == '123456'
-#     print('元祖形式正确')
+@pytest.fixture()
+def test3():
+    a = 'hello pytest'
+    b = '123456'
+    print('传出a,b')
+    return a, b
+
+
+def test4(test3):
+    u = test3[0]
+    p = test3[1]
+    assert u == 'hello pytest'
+    assert p == '123456'
+
 
 """
 分成多个fixture，然后在用例中传多个fixture参数
@@ -354,5 +355,4 @@ conftest.py的作用范围
 
 class TestCase:
     def test_login(self):
-        print('hhh，成功登录百度')
-
+        print('结束运行test_fixture.py')
