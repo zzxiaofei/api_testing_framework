@@ -43,7 +43,6 @@ class TestDatatype:
 if __name__ == '__main__':
     pytest.main(['-v'])
 
-
 """
 @pytest.mark.xfail()
 @pytest.mark.skip()

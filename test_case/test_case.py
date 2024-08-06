@@ -13,6 +13,7 @@ import allure
 9. 具有很多第三方插件，并且可以自定义扩展
 """
 
+
 class TestCase:
 
     @pytest.fixture(autouse=True)

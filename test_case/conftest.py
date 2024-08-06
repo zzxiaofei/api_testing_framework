@@ -1,5 +1,9 @@
 import pytest
 import requests
+import sys
+from os.path import dirname, join
+
+sys.path.append(dirname(dirname(__file__)))
 from common.yaml_func import read_yaml
 
 
@@ -22,8 +26,5 @@ def get_access_token(config_data):
         test_appid=test_appid, test_secret=test_secret)
     # print('url: {url}'.format(url=url))
     res = requests.get(url)
-    # assert 200 == res.status_code
     res_json = res.json()
-    # assert 7200 == res_json['expires_in']
-    # assert res.elapsed.total_seconds() < 3
-    return res_json['access_token']
+    return res, res_json, res_json['access_token']
