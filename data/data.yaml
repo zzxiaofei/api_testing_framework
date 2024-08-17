@@ -15,6 +15,3 @@ test_get:
 wechat:
   appid: wx8e79cd8133df6927
   secret: 1c31efef38e8337ee4f04e2be0d532f7
-create:
-  tag:
-    name:广东
